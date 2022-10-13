@@ -8,21 +8,19 @@
 <script>
 "use strict";
 
-let browser = prompt('your browser');
- if( browser =='Edge') {
-  alert("youre got the edge!");
- }
-  
-  else if(browser == "Chrome" 
-  || browser == "Firefox" 
-  || browser == "Safari" 
-  || browser == "Opera"){
-    alert('ok we support');
-  }
-  else {
-    alert('We hope that this page looks ok!');
-  }
-  
+const num = +prompt('number');
+switch(num){
+  case 0:
+    alert('Вы ввели число 0'); 
+    break;
+  case 1:
+    alert('Вы ввели число 1');
+    break;
+  default:
+  alert('Вы ввели число 2, а может и 3');
+  break;
+}
+ 
   
 
 </script>
